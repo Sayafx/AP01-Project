@@ -1,0 +1,16 @@
+#
+# 项目文件Git排除声明
+#
+
+# 排除一些工程路径
+# Binaries: 编译中产生的二进制文件
+AP01-Project/.idea/**
+AP01-Project/.vscode/**
+AP01-Project/Library/**
+AP01-Project/Logs/**
+AP01-Project/obj/**
+
+# 排除一些文件类型
+*.sln
+*.csproj
+*.pptx
