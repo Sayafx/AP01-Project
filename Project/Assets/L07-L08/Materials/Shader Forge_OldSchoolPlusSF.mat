@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Forge_OldSchoolPlusSF
+  m_Shader: {fileID: 4800000, guid: 299674ae11012a34686ab03a78532f03, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Occlusion:
+        m_Texture: {fileID: 2800000, guid: 1f36af5d1a8d1dd4f8d5171529cbd83e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _: 10
+    m_Colors:
+    - _BaseColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+    - _BottomColor: {r: 0.6037736, g: 0.496635, b: 0.37878248, a: 1}
+    - _LightColor: {r: 0.46084177, g: 0.5566038, b: 0.43320578, a: 1}
+    - _SideColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
+    - _UpColor: {r: 0.5176471, g: 0.36862746, b: 0.5156322, a: 1}
