@@ -34,11 +34,6 @@
             }
             // 输出结构>>>像素
             float4 frag(VertexOutput i) : COLOR {
-////// Lighting:
-////// Emissive:
-                //float3 emissive = float3(1,0.4605795,0);
-                //float3 finalColor = emissive;
-                //return fixed4(finalColor,1);
                 return float4(0.0, 1.0, 0.0, 1.0);
             }
             ENDCG
