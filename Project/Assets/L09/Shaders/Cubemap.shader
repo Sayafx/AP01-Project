@@ -1,9 +1,11 @@
-﻿Shader "VS/Matcap" {
+﻿Shader "VS/Cubemap"
+{
     Properties {
         _NormalMap ("NormalMap", 2D) = "bump" {}
-        _FresnelPow ("FresnelPow", Range(0, 5)) = 1
-        _Matcap ("Matcap", 2D) = "gray" {}
-        _EnvSpecInt ("EnvSpecInt", Range(0, 5)) = 2
+        _Cubemap ("Cubemap", Cube) = "_Skybox" {}
+        _CubemapMip ("CubemapMip", Range(0, 7)) = 0
+        _FresnelPow ("FresnelPow", Range(0, 10)) = 1
+        _EnvSpecInt ("EnvSpecInt", Range(0, 5)) = 1
     }
     SubShader {
         Tags {
@@ -25,7 +27,8 @@
 
             //输入参数
             uniform sampler2D _NormalMap;
-            uniform sampler2D _Matcap;
+            uniform samplerCUBE _Cubemap;
+            uniform float _CubemapMip;
             uniform float _FresnelPow;
             uniform float _EnvSpecInt;
 
@@ -62,20 +65,22 @@
                 float3 nDirTS = UnpackNormal(tex2D(_NormalMap, i.uv0)),rgb;
                 float3x3 TBN = float3x3(i.tDirWS, i.bDirWS, i.nDirWS);
                 float3 nDirWS = normalize(mul(nDirTS, TBN));                            // 用于计算 Fresnel 的 nDirWS
-                float3 vDirWS = normalize(_WorldSpaceCameraPos.xyz - i.posWS.xyz);      // 用于计算 Fresnel 的 vDirWS
-                float3 nDirVS = mul(UNITY_MATRIX_V, nDirWS);                            // 用于计算 Matcap
+                float3 vDirWS = normalize(_WorldSpaceCameraPos.xyz - i.posWS.xyz);      // 用于计算 Fresnel 和 Cubemap 的 vDirWS
+
+                float3 vrDIrWS = reflect(-vDirWS, nDirWS);                              // 用于采样 Cubemap
 
                 //准备中间变量
                 float3 vdotn = dot(nDirWS, vDirWS);
-                float2 MatcapUV = nDirVS.rg * 0.5 + 0.5;
 
+                //光照模型
                 //Fresnel
                 float Fresnel = pow((1 - vdotn), _FresnelPow);
-                //Matcap
-                float3 Matcap = tex2D(_Matcap, MatcapUV);
+                //Cubemap
+                float3 var_Cubemap = texCUBElod(_Cubemap, float4(vrDIrWS, _CubemapMip));
+
 
                 //envSpecLighiting
-                float3 envSpecLighiting = Matcap * Fresnel * _EnvSpecInt;
+                float3 envSpecLighiting = var_Cubemap * Fresnel * _EnvSpecInt;
 
                 return float4(envSpecLighiting, 1.0);
             }
