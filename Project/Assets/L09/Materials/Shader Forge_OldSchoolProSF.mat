@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Forge_OldSchoolProSF
+  m_Shader: {fileID: 4800000, guid: 43cfda9826510a942bd6e948e43bb9d3, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Cubemap:
+        m_Texture: {fileID: 8900000, guid: a6bbd8ea44aa1a74d84986d3bc6b4570, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: cb6c5165ed180c543be39ed70e72abc8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Occlusion:
+        m_Texture: {fileID: 2800000, guid: 1f36af5d1a8d1dd4f8d5171529cbd83e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _: 10
+    - _CubemapMip: 0
+    - _EnvSpecInt: 3.5
+    - _FresnelPow: 1
+    m_Colors:
+    - _BaseColor: {r: 0.4716981, g: 0.46502313, b: 0.46502313, a: 1}
+    - _BottomColor: {r: 0.4433962, g: 0.4050511, b: 0.361828, a: 1}
+    - _LightColor: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
+    - _SideColor: {r: 0.7264151, g: 0.68187076, b: 0.68187076, a: 1}
+    - _UpColor: {r: 0.369571, g: 0.4787563, b: 0.5188679, a: 1}
