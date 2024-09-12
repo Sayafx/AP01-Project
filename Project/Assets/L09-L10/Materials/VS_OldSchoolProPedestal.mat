@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VS_OldSchoolProPedestal
+  m_Shader: {fileID: 4800000, guid: 43cac2157dea323448d8bc105c9b2d09, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Cubemap:
+        m_Texture: {fileID: 8900000, guid: a6bbd8ea44aa1a74d84986d3bc6b4570, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmitTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 4d0e75170fd448547a4418cca03c5012, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormTex:
+        m_Texture: {fileID: 2800000, guid: c425f310f0f46794e9fa3ed135f9d4eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecTex:
+        m_Texture: {fileID: 2800000, guid: 532bc30ce4e1069458db2b5a1bd71619, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _CubemapMip: 2.5
+    - _EmitInt: 2
+    - _EnvDiffInt: 0.3
+    - _EnvSpecInt: 1
+    - _FrensnelPow: 1
+    - _SpecPow: 30
+    m_Colors:
+    - _EnvDownCol: {r: 0.7176471, g: 0.67058825, b: 0.32156864, a: 1}
+    - _EnvSideCol: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 1}
+    - _EnvUpCol: {r: 0.7254902, g: 0.5647059, b: 0.6509804, a: 1}
+    - _MainCol: {r: 1, g: 1, b: 1, a: 1}
