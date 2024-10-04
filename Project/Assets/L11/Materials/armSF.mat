@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: armSF
+  m_Shader: {fileID: 4800000, guid: ca69cae15020c7843a79208af1bcb1bd, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseTintMask:
+        m_Texture: {fileID: 2800000, guid: 60e21a411707dba44823c857baa7f844, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: b20fb3d390cfe6b4cb91fde87a57869d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetalMask:
+        m_Texture: {fileID: 2800000, guid: 6561553811b14714197b032a7745a3ce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 01a21967528fef247bbfd0e6d6e57630, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RimMask:
+        m_Texture: {fileID: 2800000, guid: 96bef70248c8f434da4e3ba8a7b3a780, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SelfIllTex:
+        m_Texture: {fileID: 2800000, guid: 613738951e084544db45e51b6354d8bd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecMask:
+        m_Texture: {fileID: 2800000, guid: fbc51c705ea5dd74bbdaa2d6bf3e5222, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecPowTex:
+        m_Texture: {fileID: 2800000, guid: 9ba49c3a1c79b564d876c32a86065874, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _FresnelInt: 1
+    - _FresnelPow: 3
+    - _SelfIllumInt: 0.7
+    - _SpecInt: 1.5
+    - _SpecPow: 2
+    m_Colors:
+    - _BaseCol: {r: 0.9, g: 0.9, b: 0.9, a: 1}
