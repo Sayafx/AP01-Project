@@ -102,7 +102,6 @@
                 float3 lDir = _WorldSpaceLightPos0.xyz;
                 float3 vDirWS = normalize(_WorldSpaceCameraPos.xyz - i.posWS.xyz);
                 float3 rDirWS = reflect(-lDir, nDirWS);
-                float3 vrDir = reflect(-vDirWS, nDirWS);
 
                 //准备点积结果
                 float3 ndotl = dot(nDirWS, lDir);
