@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: weaponSF
-  m_Shader: {fileID: 4800000, guid: ca69cae15020c7843a79208af1bcb1bd, type: 3}
+  m_Shader: {fileID: 4800000, guid: b3922f410b9b64948adc78a6df6970f6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b5ae586bb77f1a449ab4159899945b88, type: 3}
+        m_Texture: {fileID: 2800000, guid: 844372bc9c0187541b0866ce6e883411, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetalMask:
@@ -32,11 +32,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 42d8f31a5b345b64094c74ddc1dee17c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9c286b22c00c90c4e83f0fa18eb2f748, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RimMask:
-        m_Texture: {fileID: 2800000, guid: 6f688b668d8246c4eaa10b5988a546e4, type: 3}
+        m_Texture: {fileID: 2800000, guid: a605c404fbb16724b8edea79f4edfe34, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SelfIllTex:
@@ -51,11 +51,25 @@ Material:
         m_Texture: {fileID: 2800000, guid: 93387c4bd3bd68445afc83f6421e2408, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecTex:
+        m_Texture: {fileID: 2800000, guid: 1161f0dcd97becd4eb6bea38e2d37690, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TransTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_9684:
+        m_Texture: {fileID: 2800000, guid: b650d55341a3f724aaa7bd5dd07156c7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Cutoff: 0.5
     - _FresnelInt: 1.7
-    - _FresnelPow: 3
+    - _FresnelPow: 4.9
     - _SelfIllumInt: 0.7
-    - _SpecInt: 2
-    - _SpecPow: 14
+    - _SpecInt: 4.54
+    - _SpecPow: 11.2
     m_Colors:
     - _BaseCol: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    - _LightColor: {r: 1, g: 1, b: 1, a: 1}

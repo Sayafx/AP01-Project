@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: headSF
-  m_Shader: {fileID: 4800000, guid: ca69cae15020c7843a79208af1bcb1bd, type: 3}
+  m_Shader: {fileID: 4800000, guid: b3922f410b9b64948adc78a6df6970f6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 47dd6f99c55a83f418258dd49d2890aa, type: 3}
+        m_Texture: {fileID: 2800000, guid: 923d6d83d58b81c45bd9af8912de0093, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetalMask:
@@ -32,11 +32,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: c8d1971f6a34e3d4abc62bff6e6c571a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 59aad66e7f904dd4787d8fe895666b3f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RimMask:
-        m_Texture: {fileID: 2800000, guid: eccbf77c7c753064bb80298e7f86777d, type: 3}
+        m_Texture: {fileID: 2800000, guid: cdd960a84e949f247b03d5e767e7146a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SelfIllTex:
@@ -51,7 +51,20 @@ Material:
         m_Texture: {fileID: 2800000, guid: f2b288f21a4b8314b87df96433e176bc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecTex:
+        m_Texture: {fileID: 2800000, guid: 0fa1a9fe4625fe0408bb5c30c02a72bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TransTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_9684:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Cutoff: 0.5
     - _FresnelInt: 2.9
     - _FresnelPow: 4.6
     - _SelfIllumInt: 0.7
@@ -59,3 +72,4 @@ Material:
     - _SpecPow: 17
     m_Colors:
     - _BaseCol: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    - _LightColor: {r: 1, g: 1, b: 1, a: 1}
